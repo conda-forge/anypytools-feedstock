@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: anypytools
@@ -7,10 +7,10 @@ package:
 source:
    fn: {{ version }}.tar.gz
    url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/{{ version }}.tar.gz
-   sha1: e7d02a0c0edbc2729356343526677e2b3e283381
+   sha1: 4ed6ad2ff63171103c97dc0d8ebb9aa8938287e4
 
 build:          
-  number: 1
+  number: 0
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: True
@@ -28,7 +28,9 @@ requirements:
     - future >=0.15
     - h5py >=2.5
     - setuptools
+    - pydoe
     - scipy >=0.15
+    - ipywidgets >=5.1
     - notebook >=4.2
     - jupyter >=1.0
 
@@ -41,13 +43,20 @@ test:
 
 app:
     entry: AnyPyToolsTutorial.bat
-    summary: AnyPyTools Tutorial
+    summary: Python tools and utilities for working with the AnyBody Modeling System
     icon: apt_icon.png
 
 about:
   home: https://github.com/AnyBody-Research-Group/AnyPyTools
   license: MIT
-  summary: Python tools and utilities for working with the AnyBody Modelling System
+  summary: Python tools and utilities for working with the AnyBody Modeling System
+  description: |
+    AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS) 
+    from Python. Its main purpose is to launch AnyBody simulations and collect 
+    results. It has a scheduler to launch multiple instances of AMS utilising 
+    computers with multiple cores. AnyPyTools makes it possible to run parameter 
+    and Monte Carlo studies more efficiently than from within AMS.
+  dev_url: https://github.com/AnyBody-Research-Group/AnyPyTools
 
 extra:
   recipe-maintainers:
