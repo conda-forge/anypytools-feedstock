@@ -7,7 +7,7 @@ package:
 source:
    fn: {{ version }}.tar.gz
    url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/{{ version }}.tar.gz
-   sha256: d1e414e719557ce4da8a4eb31b1caf1de72ff0608c518769363f3b50e0374ad2
+   sha256: 16cfa18e5e42c00d9271887477a33a56c711a3a88ff23bce1d189de7a43289ff
 
 build:          
   number: 0
