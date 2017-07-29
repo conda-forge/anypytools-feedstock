@@ -1,4 +1,4 @@
-{% set version = "0.9.7" %}
+{% set version = "0.10.0" %}
 
 package:
   name: anypytools
@@ -7,7 +7,7 @@ package:
 source:
    fn: {{ version }}.tar.gz
    url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/{{ version }}.tar.gz
-   sha256: e9e7dd0cc1f5d398c1cb1aaa5c8950210bfb113fec66d4f259798ef2aac2ef44
+   sha256: 790ff63bf2dc087b5b24ef239aad0d0ac7a76dec8fd078305e8ecceddbfdf4b3
 
 build:          
   number: 0
@@ -37,14 +37,12 @@ requirements:
 test:
     imports:
        - anypytools
-       - anypytools.abcutils
-       - anypytools.macro_commands
-
 
 app:
     entry: AnyPyToolsTutorial.bat
     summary: Python tools and utilities for working with the AnyBody Modeling System
     icon: apt_icon.png
+    type: web
 
 about:
   home: https://github.com/AnyBody-Research-Group/AnyPyTools
@@ -55,8 +53,10 @@ about:
     from Python. Its main purpose is to launch AnyBody simulations and collect 
     results. It has a scheduler to launch multiple instances of AMS utilising 
     computers with multiple cores. AnyPyTools makes it possible to run parameter 
-    and Monte Carlo studies more efficiently than from within AMS.
+    and Monte Carlo studies more efficiently than from within the AnyBody Modeling 
+    System.
   dev_url: https://github.com/AnyBody-Research-Group/AnyPyTools
+  doc_url: https://anybody-research-group.github.io/anypytools-docs
 
 extra:
   recipe-maintainers:
