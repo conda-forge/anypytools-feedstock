@@ -3,7 +3,7 @@
 cd "%PREFIX%"
 mkdir share\notebooks\AnyPyTools
 cd share\notebooks\AnyPyTools
-xcopy "%SRC_DIR%\Tutorial" . /S/Y/I
+xcopy "%SRC_DIR%\docs\Tutorial" . /S/Y/I
 
 copy "%RECIPE_DIR%\AnyPyToolsTutorial.bat" "%SCRIPTS%\AnyPyToolsTutorial.bat"
 cd "%PREFIX%"
