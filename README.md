@@ -13,7 +13,8 @@ AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS)
 from Python. Its main purpose is to launch AnyBody simulations and collect
 results. It has a scheduler to launch multiple instances of AMS utilising
 computers with multiple cores. AnyPyTools makes it possible to run parameter
-and Monte Carlo studies more efficiently than from within AMS.
+and Monte Carlo studies more efficiently than from within the AnyBody Modeling
+System.
 
 
 Current build status
