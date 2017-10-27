@@ -1,4 +1,4 @@
-{% set version = "0.10.6" %}
+{% set version = "0.10.7" %}
 
 package:
   name: anypytools
@@ -7,7 +7,7 @@ package:
 source:
    fn: {{ version }}.tar.gz
    url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/{{ version }}.tar.gz
-   sha256: 621690ee1b7b8452aa658210dd14e434089ee4b2335dc23cd1ddc8578db0c8f3
+   sha256: 2a91d30a85fb5500cfdda4f6cd36eb5587daef00fab19ba4fb9cfd7bb3981bb2
 
 build:          
   number: 0
