@@ -14,7 +14,7 @@ build:
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: True
-  skip: True  # [not win]
+  skip: True  # [py2k or not win]
 
 requirements:
   build:
