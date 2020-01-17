@@ -44,8 +44,9 @@ app:
 about:
   home: https://github.com/AnyBody-Research-Group/AnyPyTools
   license: MIT
+  license_file: LICENSE.txt
   summary: Python tools and utilities for working with the AnyBody Modeling System
-  description: |
+  description:
     AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS) 
     from Python. Its main purpose is to launch AnyBody simulations and collect 
     results. It has a scheduler to launch multiple instances of AMS utilising 
