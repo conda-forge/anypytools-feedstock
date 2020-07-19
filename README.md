@@ -5,7 +5,7 @@ Home: https://github.com/AnyBody-Research-Group/AnyPyTools
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python tools and utilities for working with the AnyBody Modeling System
 
