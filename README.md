@@ -5,9 +5,13 @@ Home: https://github.com/AnyBody-Research-Group/AnyPyTools
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/anypytools-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python tools and utilities for working with the AnyBody Modeling System
+
+Development: https://github.com/AnyBody-Research-Group/AnyPyTools
+
+Documentation: https://anybody-research-group.github.io/anypytools-docs
 
 AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS) from Python. Its main purpose is to launch AnyBody simulations and collect results. It has a scheduler to launch multiple instances of AMS utilising computers with multiple cores. AnyPyTools makes it possible to run parameter and Monte Carlo studies more efficiently than from within the AnyBody Modeling System.
 
@@ -47,6 +51,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=39&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/anypytools-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=39&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/anypytools-feedstock?branchName=master&jobName=win&configuration=win_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
