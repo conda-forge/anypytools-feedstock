@@ -22,7 +22,8 @@ build:
 requirements:
   host:
     - setuptools
-    - python
+    - pip
+    - python >=3.8
 
   run:
     - python
