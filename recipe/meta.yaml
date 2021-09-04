@@ -1,5 +1,5 @@
-{% set version = "1.6.0" %}
-{% set sha256 = "99634e0bf2cd27a6609db5fcc7ba776b1cbf74a5802b9f07a5ec3b7b5c601363" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "119e35cf2c4ad8f74f42e169aec402760a9bd3b6e8ef498efa40ffc9116c49ca" %}
 
 
 package:
@@ -16,11 +16,13 @@ build:
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: true
-  skip: true  # [py2k or not win]
+  skip: true  # [py2k or py<38]
+  script:  {{ PYTHON }} -m pip install . --no-deps -vv  # [not win] 
 
 requirements:
   host:
     - setuptools
+    - pip
     - python
 
   run:
