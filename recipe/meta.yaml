@@ -16,14 +16,14 @@ build:
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: true
-  skip: true  # [py2k]
+  skip: true  # [py2k or py<38]
   script:  {{ PYTHON }} -m pip install . --no-deps -vv  # [not win] 
 
 requirements:
   host:
     - setuptools
     - pip
-    - python >=3.8
+    - python
 
   run:
     - python
