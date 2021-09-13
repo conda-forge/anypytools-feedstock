@@ -1,5 +1,5 @@
-{% set version = "1.7.0" %}
-{% set sha256 = "119e35cf2c4ad8f74f42e169aec402760a9bd3b6e8ef498efa40ffc9116c49ca" %}
+{% set version = "1.7.1" %}
+{% set sha256 = "95c746db454241e625bb185e6ad3fdb78fa37d6a51e09354352500dca462606b" %}
 
 
 package:
@@ -17,7 +17,7 @@ build:
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: true
   skip: true  # [py2k or py<38]
-  script:  {{ PYTHON }} -m pip install . --no-deps -vv  # [not win] 
+  script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
   host:
