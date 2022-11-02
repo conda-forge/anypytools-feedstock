@@ -1,5 +1,5 @@
-{% set version = "1.8.2" %}
-{% set sha256 = "42f227f2a5be1cf2e1d0ad825ed9ce7c42b440f8f203ce5a80a603b7ca904dc9" %}
+{% set version = "1.9.0" %}
+{% set sha256 = "5d738ddf13df5deea1579769d5a52086c9046cf711b8994599c6c95614788160" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: true
