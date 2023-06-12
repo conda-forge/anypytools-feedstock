@@ -1,11 +1,11 @@
-About anypytools
-================
+About anypytools-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/anypytools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/AnyBody-Research-Group/AnyPyTools
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/anypytools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python tools and utilities for working with the AnyBody Modeling System
 
