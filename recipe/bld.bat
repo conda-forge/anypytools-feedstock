@@ -1,4 +1,4 @@
-"%PYTHON%" setup.py install --single-version-externally-managed --record record.txt 
+"%PYTHON%" -m pip install . --no-deps -vv --report record.txt 
 
 cd "%PREFIX%"
 mkdir share\notebooks\AnyPyTools
