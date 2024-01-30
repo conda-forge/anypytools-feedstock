@@ -12,11 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   # Added to allow the pytest entry points in setup.py to work
   # This is also the reason for setuptools being a runtime dependency. 
   preserve_egg_dir: true
-  skip: true  # [py2k or py<38]
+  skip: true  # [py2k or py<38 or osx]
   script: {{ PYTHON }} -m pip install . --no-deps -vv  # [not win]
 
 requirements:
