@@ -1,5 +1,5 @@
-{% set version = "1.11.6" %}
-{% set sha256 = "25d038a37b98cc38384756af737b2615f6d0a3b1a996385c0471eee99a5bea48" %}
+{% set version = "1.12.0" %}
+{% set sha256 = "8943a9da3f0322d6523aaf704d05ff43c11ec006d960a5959470a686c6b8c835" %}
 
 
 package:
@@ -31,6 +31,7 @@ requirements:
     - setuptools
     - pydoe
     - tqdm
+    - pywin32  # [win]
     - scipy >=0.15
     - pygments_anyscript
 
