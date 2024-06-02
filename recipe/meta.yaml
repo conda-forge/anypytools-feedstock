@@ -31,7 +31,7 @@ requirements:
     - setuptools
     - pydoe
     - tqdm
-    - pywin32  # win
+    - pywin32  # [win]
     - scipy >=0.15
     - pygments_anyscript
 
