@@ -37,7 +37,6 @@ tests:
   - python:
       imports:
         - anypytools
-      pip_check: false
 
 about:
   license: MIT
@@ -54,9 +53,4 @@ extra:
   recipe-maintainers:
     - melund
 
-# app:
-#   entry: AnyPyToolsTutorial.bat
-#   summary: Python tools and utilities for working with the AnyBody Modeling System
-#   icon: apt_icon.png
-#   type: web
 
