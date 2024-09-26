@@ -43,6 +43,8 @@ setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 source run_conda_forge_build_setup
 
+
+
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
@@ -58,7 +60,12 @@ if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     echo "rattler-build currently doesn't support debug mode"
 else
 
-    rattler-build build --recipe "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" ${EXTRA_CB_OPTIONS:-}
+    rattler-build build --recipe "${RECIPE_ROOT}" \
+     -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+     ${EXTRA_CB_OPTIONS:-} \
+     --extra-meta flow_run_id="${flow_run_id:-}" \
+     --extra-meta remote_url="${remote_url:-}" \
+     --extra-meta sha="${sha:-}"
     ( startgroup "Inspecting artifacts" ) 2> /dev/null
 
     # inspect_artifacts was only added in conda-forge-ci-setup 4.6.0
