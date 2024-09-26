@@ -14,7 +14,7 @@ source:
   file_name: ${{ version }}.tar.gz
 
 build:
-  number: 0
+  number: 1
   skip:
     - osx
   script: python -m pip install . --no-deps -vv
