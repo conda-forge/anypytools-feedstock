@@ -1,5 +1,3 @@
-schema_version: 1
-
 context:
   version: 1.11.5
   sha256: 1ebaedb7e89bd24ba3c8685f4d281a3ac87db942b689b7f06ec401c6099f2727
@@ -52,5 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - melund
-
-
