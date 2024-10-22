@@ -3,11 +3,15 @@ About anypytools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/anypytools-feedstock/blob/main/LICENSE.txt)
 
-
+Home: https://github.com/AnyBody-Research-Group/AnyPyTools
 
 Package license: MIT
 
 Summary: Python tools and utilities for working with the AnyBody Modeling System
+
+Development: https://github.com/AnyBody-Research-Group/AnyPyTools
+
+Documentation: https://anybody-research-group.github.io/anypytools-docs
 
 AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS) from Python. Its main purpose is to launch AnyBody simulations and collect results. It has a scheduler to launch multiple instances of AMS utilising computers with multiple cores. AnyPyTools makes it possible to run parameter and Monte
 Carlo studies more efficiently than from within the AnyBody Modeling System.
