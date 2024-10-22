@@ -30,6 +30,9 @@ requirements:
     - tqdm
     - scipy >=0.15
     - pygments_anyscript
+    - if: win
+    - then: pywin32
+      
 
 tests:
   - python:
