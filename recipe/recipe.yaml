@@ -9,7 +9,6 @@ package:
 source:
   url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/${{ version }}.tar.gz
   sha256: ${{ sha256 }}
-  file_name: ${{ version }}.tar.gz
 
 build:
   number: 0
