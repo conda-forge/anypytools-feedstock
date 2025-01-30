@@ -1,6 +1,6 @@
 context:
-  version: 1.13.0
-  sha256: a91e6de8379cd2ed853b56a32a939583ecd0ecf97c0751f67a5fdbcbfe6f7a73
+  version: 1.13.1
+  sha256: a3b6689321ba4e7e73fd91605f0d262b02603655ae35bb3715731ba8a6833223
 
 package:
   name: anypytools
@@ -9,7 +9,6 @@ package:
 source:
   url: https://github.com/AnyBody-Research-Group/AnyPyTools/archive/${{ version }}.tar.gz
   sha256: ${{ sha256 }}
-  file_name: ${{ version }}.tar.gz
 
 build:
   number: 0
@@ -44,8 +43,12 @@ about:
   license_file: LICENSE.txt
   summary: Python tools and utilities for working with the AnyBody Modeling System
   description: |
-      AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS) from Python. Its main purpose is to launch AnyBody simulations and collect results. It has a scheduler to launch multiple instances of AMS utilising computers with multiple cores. AnyPyTools makes it possible to run parameter and Monte
-      Carlo studies more efficiently than from within the AnyBody Modeling System.
+      AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS)
+      from Python. Its main purpose is to launch AnyBody simulations and collect
+      results. It has a scheduler to launch multiple instances of AMS utilising
+      computers with multiple cores. AnyPyTools makes it possible to run
+      parameter and Monte Carlo studies more efficiently than from within the
+      AnyBody Modeling System.
   homepage: https://github.com/AnyBody-Research-Group/AnyPyTools
   repository: https://github.com/AnyBody-Research-Group/AnyPyTools
   documentation: https://anybody-research-group.github.io/anypytools-docs
