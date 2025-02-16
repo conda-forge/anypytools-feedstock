@@ -11,7 +11,7 @@ source:
   sha256: ${{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip:
     - osx
   script: python -m pip install . --no-deps -vv
@@ -31,7 +31,7 @@ requirements:
     - pygments_anyscript
     - if: win
       then: pywin32
-      
+
 
 tests:
   - python:
@@ -43,12 +43,12 @@ about:
   license_file: LICENSE.txt
   summary: Python tools and utilities for working with the AnyBody Modeling System
   description: |
-      AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS)
-      from Python. Its main purpose is to launch AnyBody simulations and collect
-      results. It has a scheduler to launch multiple instances of AMS utilising
-      computers with multiple cores. AnyPyTools makes it possible to run
-      parameter and Monte Carlo studies more efficiently than from within the
-      AnyBody Modeling System.
+    AnyPyTools is a toolkit for working with the AnyBody Modeling System (AMS)
+    from Python. Its main purpose is to launch AnyBody simulations and collect
+    results. It has a scheduler to launch multiple instances of AMS utilising
+    computers with multiple cores. AnyPyTools makes it possible to run
+    parameter and Monte Carlo studies more efficiently than from within the
+    AnyBody Modeling System.
   homepage: https://github.com/AnyBody-Research-Group/AnyPyTools
   repository: https://github.com/AnyBody-Research-Group/AnyPyTools
   documentation: https://anybody-research-group.github.io/anypytools-docs
