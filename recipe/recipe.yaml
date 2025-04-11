@@ -1,6 +1,6 @@
 context:
-  version: 1.13.1
-  sha256: a3b6689321ba4e7e73fd91605f0d262b02603655ae35bb3715731ba8a6833223
+  version: 1.13.2
+  sha256: 11b20055def1a22c5106d1df8084e9794b88e4f31642466f6a174d2095eff0a5
 
 package:
   name: anypytools
@@ -11,7 +11,7 @@ source:
   sha256: ${{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip:
     - osx
   script: python -m pip install . --no-deps -vv
