@@ -1,6 +1,6 @@
 context:
-  version: "1.15.1"
-  sha256: cfe34af9f44660be9c38315fc196a55ed884bf0fe6b3b1d66846941dfb177d4e
+  version: "1.15.2"
+  sha256: 9ec91d6c2d37c82e4d42ff26359090065520cd802ccdc9456263eff4207c7eed
 
 package:
   name: anypytools
